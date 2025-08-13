@@ -1,4 +1,4 @@
-# 🌐 Angular Multiverse
+# 🌐 Angular NgGalaxy
 
 A **multi-tool Angular project** containing several standalone mini-apps:
 - ✅ **To-Do App** — Manage tasks easily
