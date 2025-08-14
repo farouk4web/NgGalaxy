@@ -1,0 +1,127 @@
+/* Main container */
+.todo-wrapper {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input area */
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  background: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-input button:hover {
+  background: #3da5dc;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+/* Edit mode */
+.todo-edit {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-edit input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.actions button,
+.todo-edit button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions .edit {
+  color: #ff9800;
+}
+
+.actions .delete {
+  color: #e53935;
+}
+
+.todo-edit .save {
+  color: green;
+}
+
+.todo-edit .cancel {
+  color: red;
+}
+
+.actions button:hover,
+.todo-edit button:hover {
+  transform: scale(1.2);
+}
+
+/* Empty message */
+.empty-msg {
+  text-align: center;
+  color: #aaa;
+  margin-top: 20px;
+}
