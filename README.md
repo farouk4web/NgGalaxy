@@ -41,7 +41,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ng-multiverse.git
+git clone https://github.com/farouk4web/NgGalaxy.git
 
 # Navigate into the project
 cd ng-multiverse
