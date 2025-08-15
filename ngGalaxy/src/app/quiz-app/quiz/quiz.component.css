@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: radial-gradient(circle at center, #001f3f, #000);
+  border-radius: 20px;
+  border: 3px solid gold;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+h2 {
+  color: gold;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid gold;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, #002f5f, #001f3f);
+  color: gold;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #003f7f, #002f5f);
+  box-shadow: 0 0 15px gold;
+}
+
+button:active {
+  transform: scale(0.98);
+}

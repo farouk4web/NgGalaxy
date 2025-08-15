@@ -1,0 +1,33 @@
+<div class="converter-card">
+  <h2>Currency Converter</h2>
+
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="number" [(ngModel)]="amount" (input)="convert()" />
+  </div>
+
+  <div class="form-group">
+    <label>From</label>
+    <select [(ngModel)]="from" (change)="loadRates()">
+      @for (currency of currencies; track currency) {
+        <option [value]="currency">{{ currency }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>To</label>
+    <select [(ngModel)]="to" (change)="convert()">
+      @for (currency of currencies; track currency) {
+        <option [value]="currency">{{ currency }}</option>
+      }
+    </select>
+  </div>
+
+  @if (convertedAmount !== null) {
+    <div class="result">
+      <p>{{ amount }} {{ from }} =</p>
+      <h3>{{ convertedAmount | number : '1.2-2' }} {{ to }}</h3>
+    </div>
+  }
+</div>
