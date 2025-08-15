@@ -44,7 +44,7 @@ src/
 git clone https://github.com/farouk4web/NgGalaxy.git
 
 # Navigate into the project
-cd ng-multiverse
+cd NgGalaxy
 
 # Install dependencies
 npm install
